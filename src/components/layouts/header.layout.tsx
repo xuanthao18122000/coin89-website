@@ -1,88 +1,71 @@
 import "@/common/styles/style.css";
 
 const HeaderScreen = () => {
-  return (
-    <div className="pageWrapper">
+	return (
+		<div
+			className="bh-wrap d-flex gap-5 align-items-center px-5"
+			style={{ height: "70px", fontSize: "21px" }}
+		>
+			<div className="logo d-flex">
+				<a href="/">
+					<img
+						src="https://markets.coin98.com/_next/static/media/logo.e0041453.svg"
+						alt="coin98.vn"
+					/>
+				</a>
+			</div>
 
-        <div className="header-wrap d-flex align-items-center justify-content-between h-100 px-5" style={{ minHeight: "60px", background: '#11100f' }}>
-            <div className="row align-items-center mx-5">
-              <div className="logo col-md-2 col-lg-2 d-none d-lg-block">
-                <a href="index.html">
-                  <img
-                    src="https://markets.coin98.com/_next/static/media/logo.e0041453.svg"
-                    alt="Logo"
-                    title="Logo"
-                    style={{ width: "50%" }}
-                  />
-                </a>
-              </div>
-              <div className="col-2 col-sm-3 col-md-3 col-lg-8">
-                <div className="d-block d-lg-none">
-                  <button
-                    type="button"
-                    className="btn--link site-header__menu js-mobile-nav-toggle mobile-nav--open"
-                  >
-                    <i className="icon anm anm-times-l"></i>
-                    <i className="anm anm-bars-r"></i>
-                  </button>
-                </div>
-                <nav className="grid__item">
-                  <ul className="list-unstyled d-flex gap-3">
-                    <li className="lvl1 parent megamenu">
-                      <a
-                        href="/"
-                        className="text-white fw-normal text-decoration-none"
-                      >
-                        Coin 89
-                      </a>
-                    </li>
-                    <li className="lvl1 parent dropdown">
-                      <a
-                        href="#"
-                        className="text-white fw-normal text-decoration-none"
-                      >
-                        Products
-                      </a>
-                    </li>
-                    <li className="lvl1 parent dropdown">
-                      <a
-                        href="/collection"
-                        className="text-white fw-normal text-decoration-none"
-                      >
-                        Trade
-                      </a>
-                    </li>
-                    <li className="lvl1">
-                      <a
-                        href="/about"
-                        className="text-white fw-normal text-decoration-none"
-                      >
-                       Wallet
-                      </a>
-                    </li>
-                    <li className="lvl1">
-                      <a
-                        href="/contact"
-                        className="text-white fw-normal text-decoration-none"
-                      >
-                        Markets
-                      </a>
-                    </li>
-                    <li className="lvl1 parent megamenu">
-                      <a
-                        href="/faqs"
-                        className="text-white fw-normal text-decoration-none"
-                      >
-                        Campain
-                      </a>
-                    </li>
-                  </ul>
-                </nav>
-              </div>
-            </div>
-          </div>
-    </div>
-  );
+			<div className="d-flex align-items-center justify-content-between w-100">
+				<div className="menu hidden-md-down">
+					<ul className="d-flex gap-5 list-unstyled mb-0">
+						<li className="text-decoration-none">
+							<a className="text-decoration-none" style={{color: '#cda439'}} href="/markets">
+								Markets
+							</a>
+						</li>
+						<li className="text-decoration-none">
+							<a className="text-decoration-none" style={{color: '#cda439'}} href="/markets">
+              Widget
+							</a>
+						</li>
+						<li className="text-decoration-none">
+							<a className="text-decoration-none" style={{color: '#cda439'}} href="/markets">
+              DApps
+							</a>
+						</li>
+						<li className="text-decoration-none">
+							<a className="text-decoration-none" style={{color: '#cda439'}} href="/markets">
+              Snapshot
+							</a>
+						</li>
+						<li className="text-decoration-none">
+							<a className="text-decoration-none" style={{color: '#cda439'}} href="/markets">
+              CUSD
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div className="action d-flex gap-3">
+					<div className="cart">
+						<a href="" data-bs-toggle="modal" data-bs-target="#modalCart">
+							<img
+								src="https://web.nvnstatic.net/tp/T0441/img/hd-cart.png?v=3"
+								alt="Giỏ hàng"
+							/>
+						</a>
+					</div>
+					<div className="user">
+						<a href="/user/signin">
+							<img
+								src="https://web.nvnstatic.net/tp/T0441/img/hd-user.png?v=3"
+								alt="Tài khoản"
+							/>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	);
 };
 
 export default HeaderScreen;
